@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# IDE settings
+.idea/
+
+# Compiled Python files
+*.pyc
+
+# Python caches
+__pycache__
+
+
+robots/migrations/
+orders/migrations/
+customers/migrations/
