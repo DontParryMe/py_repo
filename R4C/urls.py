@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from orders.views import create_order
+from customers.views import create_customer
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/create_order/', create_order, name='create-order'),
+    path('api/create_customer/', create_customer, name='create-customer')
 ]
