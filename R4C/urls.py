@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from robots.views import get_excel_report
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/report/', get_excel_report, name='report')
 ]
